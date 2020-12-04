@@ -363,7 +363,7 @@ def warping(trace, offsets):
     # print(f"trace: {trace.device}, offset: {offsets.device}")
     bsize = trace.shape[0]
     xsize = trace.shape[1]  # 256
-    # offsets = offsets * imsize
+    offsets = offsets * imsize
     offsets = offsets[:, :, :, 0:2].view(bsize, -1, 2)  # 3rd channel is discared
     # print(offsets.shape)
     # first build the grid for target face coordinates
