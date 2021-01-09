@@ -11,7 +11,9 @@ This is an unofficial implementation of "On Disentangling Spoof Traces for Gener
 - TensorFlow 2+
 
 ## Data Preparation
-- Create keypoints for both Live and Spoof faces
+- Create keypoints for both Live and Spoof faces using any of these repository:
+    - https://github.com/cunjian/pytorch_face_landmark
+    - https://github.com/cunjian/pytorch_face_landmark
 - Create a csv with Column Names being 'rgb_path', 'keypoints', 'label'
 - For labels, Spoof is 1 and Real is 0
 - Equally Sample the dataset so that there is equal number of spoof and equal number of real.
@@ -33,7 +35,7 @@ Still in progress.
 
 ## Help taken from
 1. On Disentangling Spoof Traces for Generic Face Anti-Spoofing [[1]](#1).
-2. [[Official Implementation in TensorFlow](https://github.com/yaojieliu/ECCV20-STDN)]
+2. [Official Implementation in TensorFlow(https://github.com/yaojieliu/ECCV20-STDN)]
 
 ## Citations
 <a id="1">[1]</a> 
